@@ -7,9 +7,19 @@ Lab 18 - Cryptography
 ---
 
 ## Description
-<!-- ***[Tell me about your application, should be about a paragraph]***
-This is a Python console application that will ....
- -->
+### Feature Tasks and Requirements
+- Create an __`encrypt`__ function that takes in a plain text phrase and a numeric shift.
+    - the phrase will then be __`shifted`__ that many letters.
+        - e.g. encrypt(‘abc’,1) would return ‘bcd’ = E.g. encrypt(‘acb’, 10) would return ‘klm’
+    - shifts that exceed 26 should wrap around
+        - e.g. encrypt(‘abc’,27) would return ‘bcd’
+- Create a __`decrypt`__ method that takes in encrypted text and numeric shift which will restore the encrypted text back to its original form as long as correct key is supplied.
+- Break the cipher so that an encrypted message can be transformed into its original state *WITHOUT* access to the key.
+- Devise a method for the computer to determine if code was broken with minimal human guidance. <br>
+
+### Implementation Notes
+In order to accomplish a certain task you’ll need access to a __`corpus`__ of English words.
+A search on something like __`python list of english words`__ should get you going.
 
 ---
 
