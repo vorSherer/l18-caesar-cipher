@@ -13,9 +13,9 @@ def encrypt(plain_text, key):
 
     for i in range(len(plain_text)):
         char = plain_text[i]
-        # Pass spaces
-        if char == " ":
-            encryption += " "
+        # Pass punctuation marks and spaces
+        if not char.isalpha():
+            encryption += char
             continue
         # Encrypt uppercase characters
         elif char.isupper():
@@ -42,12 +42,12 @@ def decrypt(encrypted_text, key):
 
     for i in range(len(encrypted_text)):
         char = encrypted_text[i]
-        # Pass spaces
-        if char == " ":
-            decryption += " "
+        # Pass punctuation marks and spaces
+        if not char.isalpha():
+            decryption += char
             continue
         # Decrypt uppercase characters
-        if char.isupper():
+        elif char.isupper():
             """ Append to decryption the unicode character at 
             (unicode index of plain character - shift value less value of unicode 'A') 
             modulo 26 (for wraparound) less value of unicode 'A' again for uppercase result.
@@ -80,4 +80,4 @@ if __name__ == "__main__":
     # print(encrypt('Hello World', 2))
     # print(decrypt('Jgnnq Yqtnf', 2))
     print(encrypt('It was the best of times, it was the worst of times.', 4))    
-    print(decrypt('Mx aew xli fiwx sj xmqiwd mx aew xli asvwx sj xmqiwf', 4))
+    print(decrypt('Mx aew xli fiwx sj xmqiw, mx aew xli asvwx sj xmqiw.', 4))
