@@ -23,49 +23,23 @@ A search on something like __`python list of english words`__ should get you goi
 
 ---
 
-### Getting Started
-- Clone this repository to your local machine.
-
-```
-$ git clone [repo clone url here]
-```
-
-### To run the program from VS Code:
-<!-- - Select ```File``` -> ```Open``` -> ```Project/Solution``` -->
-
-- Next navigate to the location into which you cloned the Repository.
-
-<!-- - Double click on the ```Lab01-About-Me``` directory. -->
-
-<!-- - Then select and open ```AboutMe.py``` -->
+My code is [here](./caesar_cipher/caesar_cipher.py) <br>
 
 ---
-
-### Visuals
-<!-- 
-***[Add screenshots of your application in action]***
- -->
-
-#### Application Start
-![Image 1](https://via.placeholder.com/750x500)
-#### Using the Application
-![Image 1](https://via.placeholder.com/750x500)
-#### Application End
-![Image 1](https://via.placeholder.com/750x500)
-
----
-
-### Change Log
-<!-- 
-***[The change log will list any changes made to the code base. This includes any changes from TA/Instructor feedback]***  
-1.3: *Added summary comments to the methods* - 8 Nov 2010  
-1.2: *Changed variable names to follow proper convention* - 6 Nov 2010  
-1.1: *Added a Try/Catch/Finally for Question 2* - 5 Nov 2010  
- -->
-0.1.0: Poetry-created baseline project - 2020-07-29
 
 ### Collaborations and Attributions
 .gitignore content courtesy of https://www.toptal.com/developers/gitignore/api/python
 
+__likegeeks.com__ helped with [understanding chr() and ord()](https://likegeeks.com/python-caesar-cipher/)
+
+__Geeks for Geeks__ helped with [encryptions and decryption code](https://www.geeksforgeeks.org/caesar-cipher-in-cryptography/)
+
+__Stack overflow__ helped with how to deal with [spaces](https://stackoverflow.com/questions/20269330/how-to-make-a-caesar-cipher-work-with-input-that-has-spaces-in-python) and how to deal with [punctuation marks](https://stackoverflow.com/questions/54172455/how-to-leave-punctuation-unchanged-in-caesar-cipher-python)
+
+__Skyler Burger__ helped immensely when trying to import a corpus of english words when 'import' wasn't working for the cipher-breaker function.
+
+nltk.org Word Lists downloaded directly from [here (item 61 on the list)](http://www.nltk.org/nltk_data/)
+
+__Lee-Roy King__ helped in a big way to get caesar_cracker function working beyond brute force level.
 
 <!-- Submission PR: NN -->
